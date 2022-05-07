@@ -31,7 +31,7 @@
 
 > ### In terms of a database call, after the player fills out the form on the (login.html) page, the data is sent to (login.php) via <form action="login.php" method=" post">, and the data is retrieved from the database and verified. The player is transported to the beginning of the game displayed on the web page (Game.html) based on the data supplied, and if the data sent is correct. For further information, please see the following image: 
 
-![scorephp](reportIMG\scorephp.jpg)
+![scorephp](scorephp.jpg)
 
 > ### And through the code <form action="sscore.php" method="post"> in the web page (Game.html) the save button is linked with and through the page (sscore.php) and updates the player's score through this code: $ sql = "UPDATE user SET score = '$scorre' WHERE full_name= '$username'" ,the player information is called with the code:$sql = "SELECT full_name, score FROM user ORDER BY score DESC"; $result = mysqli_query($conn, $sql); $rank = 1; $count = mysqli_num_rows($result);
 
